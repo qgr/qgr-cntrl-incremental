@@ -31,8 +31,9 @@ define(function (require) {
     tmpl: Handlebars.compile(incremental_tmpl),
 
     events: {
-      'input change': 'set_choice',
-      'input input': 'set_choice',
+      'change input': 'set_choice',
+      'keyup input': 'set_choice',
+      'input input': 'set_choice'
     },
 
     initialize: function(options) {
