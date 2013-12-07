@@ -51,6 +51,7 @@ define(function (require) {
         label: this.label,
         placeholder: this.placeholder,
         id: this.el.id + 'incremental',
+        search_val: t.search_model.get('search_val')
       })
       this.$el.html(render_content);
       return this
